@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Michael Webb (TheRandomMelon)'s official site for all of the random things he does.
+description: Michael Webb for Wiimmfi 2020's official campaign website.
 keywords: homepage
 ---
 
@@ -9,34 +9,34 @@ keywords: homepage
 <head>
 	<!-- Search Engine Meta -->
 	<meta name="robots" content="index, follow">
-	<meta name="author" content="TheRandomMelon" />
+	<meta name="author" content="Michael Webb for Wiimmfi 2020" />
 	<meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
 	<meta name="keywords" content="trm, therandommelon, trm youtube, therandommelon blog, therandommelon.com, {{ page.keywords | escape }}">
 	<!-- Open Graph  -->
 	<meta property="og:title" content="{{ page.title | escape }}">
-	<meta property="og:site_name" content="TheRandomMelon">
-	<meta property="og:url" content="https://therandommelon.com">
+	<meta property="og:site_name" content="Michael Webb for Wiimmfi 2020">
+	<meta property="og:url" content="https://campaign.therandommelon.com">
 	<meta property="og:description" content="{{ page.description | escape }} ">
 	<meta property="og:type" content="website">
 	{% if page.image %}
-	<meta property="og:image" content="https://therandommelon.com/img/posts/{{ page.image }}">
+	<meta property="og:image" content="https://campaign.therandommelon.com/img/posts/{{ page.image }}">
 	{% else %}
-	<meta property="og:image" content="https://therandommelon.com/img/trm_logo.png">
+	<meta property="og:image" content="https://campaign.therandommelon.com/img/trm_logo.png">
 	{% endif %}
 	<!-- Twitter -->
 	{% if page.image %}
 	<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="@michaelwebbtrm" />
+		<meta name="twitter:site" content="@WebbWarRoom" />
 		<meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
 		<meta name="twitter:description" content="{% if page.desc %}{{ page.desc | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
-		<meta name="twitter:image" content="https://therandommelon.com/img/posts/{{ page.image }}" />
+		<meta name="twitter:image" content="https://campaign.therandommelon.com/img/posts/{{ page.image }}" />
 	{% else %}
 		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@michaelwebbtrm" />
+		<meta name="twitter:site" content="@WebbWarRoom" />
 		<meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
 		<meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
 {% endif %}
-<title>{% if page.title %}{{ page.title }} - {% endif %} TheRandomMelon</title>
+<title>{% if page.title %}{{ page.title }} - {% endif %} Michael Webb for Wiimmfi</title>
 <meta name=”theme-color” content=”#96B844”>
 <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
@@ -53,13 +53,10 @@ keywords: homepage
 <body class="d-flex flex-column homepagerow">
 	<div class="m-4">
 		<div style="text-align: center;">
-			<h1><img src="/img/trm_logo.png" width="50" alt="TRM Logo" class="rounded-circle align-top" /> TheRandomMelon</h1>
+			<h1><img src="/img/trm_logo.png" width="50" alt="TRM Logo" class="rounded-circle align-top" /> Michael Webb for Wiimmfi</h1>
 
-			<a href="https://twitter.com/michaelwebbtrm" class="mr-2 text-twitter"><i class="fab fa-twitter"></i> Twitter</a>
-			<a href="https://twitch.tv/therandommelon" class="mr-2 text-twitch"><i class="fab fa-twitch"></i> Twitch (semi-regular streams)</a>
-			<a href="https://www.youtube.com/TheRandomMelon" class="mr-2 text-youtube"><i class="fab fa-youtube"></i> YouTube</a>
-			<a href="https://gitlab.com/TheRandomMelon" class="mr-2 text-gitlab"><i class="fab fa-gitlab"></i> GitLab</a>
-			<a href="https://github.com/TheRandomMelon" class="mr-2 text-github"><i class="fab fa-github"></i> GitHub</a>
+			<a href="https://twitter.com/WebbWarRoom" class="mr-2 text-twitter"><i class="fab fa-twitter"></i> Twitter War Room</a>
+			<a href="https://twitter.com/michaelwebbtrm" class="mr-2 text-twitter"><i class="fab fa-twitter"></i> Michael's Twitter</a>
 			<a href="" data-toggle="modal" data-target="#emailModal" class="mr-2 text-blog"><i class="fas fa-envelope"></i> Email</a>
 			<a href="/blog/" class="mr-2 text-blog"><i class="fas fa-pencil-alt"></i> Blog</a>
 		</div>
@@ -116,72 +113,6 @@ keywords: homepage
 		</div>
 		{% endfor %}
 		<br>
-		<h2>Stuff I make and made</h2>
-		<div class="stuff-list">
-			<div class="card">
-				<div class="card-body">
-					<div class="row">
-						<div class="col col-projects-icon">
-							<img src="/img/neptune.jpg" width="64" alt="Neptune" class="rounded-circle" />
-						</div>
-						<div class="col">
-							<h4 class="card-title">NeptuneTV</h4>
-							<p class="card-text">Coming soon! A semi-open source content aggregation network that allows for a Reddit-style community.</p>
-							<a href="https://watchneptune.tv" class="btn btn-trm">
-								<i class="fas fa-globe"></i> Website
-							</a>
-							<a href="https://twitter.com/watchneptunetv" class="btn btn-twitter">
-								<i class="fab fa-twitter"></i> Twitter
-							</a>
-						</div>
-					</div>
-					<div class="position-relative">
-						<span class="position-absolute right-0 badge badge-success">Active development</span>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<div class="row">
-						<div class="col col-projects-icon">
-							<img src="/img/melonian.png" width="64" alt="Melonian" class="rounded-circle" />
-						</div>
-						<div class="col">
-							<h4 class="card-title">Melonian</h4>
-							<p class="card-text">A jack-of-all-trades Discord bot.</p>
-							<a href="https://gitlab.com/Melonz/Melonian" class="btn btn-gitlab">
-								<i class="fab fa-gitlab"></i> GitLab
-							</a>
-						</div>
-					</div>
-					<div class="position-relative">
-						<span class="position-absolute right-0 badge badge-warning">Security Updates ONLY</span>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<div class="row">
-						<div class="col col-projects-icon">
-							<img src="/img/histacom.png" width="64" alt="Histacom" class="rounded-circle" />
-						</div>
-						<div class="col">
-							<h4 class="card-title">Histacom 2</h4>
-							<p class="card-text">Revival of the original hacking simulator!</p>
-							<a href="https://github.com/TheRandomMelon/Melonian" class="btn btn-github-alt">
-								<i class="fab fa-github"></i> GitHub
-							</a>
-							<a href="https://discord.gg/CeBBXWN" class="btn btn-discord">
-								<i class="fab fa-discord"></i> Discord Server
-							</a>
-						</div>
-					</div>
-					<div class="position-relative">
-						<span class="position-absolute right-0 badge badge-danger">On hold</span>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </body>
 </html>
